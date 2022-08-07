@@ -1,0 +1,42 @@
+forev@DESKTOP-NIHNKNB MINGW64 /c/DESARROLLO/Git/miapp (master)
+$ git checkout -b feature-primerarama
+Switched to a new branch 'feature-primerarama'
+
+forev@DESKTOP-NIHNKNB MINGW64 /c/DESARROLLO/Git/miapp (feature-primerarama)
+$ touch branch1.txt
+
+forev@DESKTOP-NIHNKNB MINGW64 /c/DESARROLLO/Git/miapp (feature-primerarama)
+$ git add branch1.txt
+
+forev@DESKTOP-NIHNKNB MINGW64 /c/DESARROLLO/Git/miapp (feature-primerarama)
+$ git commit -am "adding branch1.txt"
+[feature-primerarama d8ed8d6] adding branch1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branch1.txt
+
+forev@DESKTOP-NIHNKNB MINGW64 /c/DESARROLLO/Git/miapp (feature-primerarama)
+$ git checkout master
+Switched to branch 'master'
+
+forev@DESKTOP-NIHNKNB MINGW64 /c/DESARROLLO/Git/miapp (master)
+$ touch master.txt
+
+forev@DESKTOP-NIHNKNB MINGW64 /c/DESARROLLO/Git/miapp (master)
+$ git add master.txt
+
+forev@DESKTOP-NIHNKNB MINGW64 /c/DESARROLLO/Git/miapp (master)
+$ git commit -am "master.txt"
+[master ebd93f1] master.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 master.txt
+
+forev@DESKTOP-NIHNKNB MINGW64 /c/DESARROLLO/Git/miapp (master)
+$ git rebase feature-primerarama
+Successfully rebased and updated refs/heads/master.
+
+forev@DESKTOP-NIHNKNB MINGW64 /c/DESARROLLO/Git/miapp (master)
+$ ls
+branch1.txt  master.txt  mifichero1.txt  mifichero2.txt  mifichero3.txt
+
+forev@DESKTOP-NIHNKNB MINGW64 /c/DESARROLLO/Git/miapp (master)
+$
