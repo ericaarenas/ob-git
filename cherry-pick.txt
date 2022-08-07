@@ -1,0 +1,20 @@
+git reset -hard HEAD <- revertir historial
+git log --oneline --graph
+
+Para añadir un archivo al repositorio
+git add fichero
+
+Commitear 
+git commit fichero -m "mensaje"
+
+Para hacer merge de commits concreto -> cherry picky
+en torno a una serie de commits mergeo el que más me interesa
+git checkout ramadondeTengoelCommit
+git log <- de aquí pillo el número de commit (hash)
+git checkout master
+git cherry-pick hash1 hash2 (si quieres que sean varios)
+
+si quiero un rango:
+git cherry-pick hashInicial..hashFinal (sin añadir dichos commits)
+git cherry-pick hashInicial^..hashFinal (añadiendo dichos commits)
+git cherry-pick quit <- para abortar
