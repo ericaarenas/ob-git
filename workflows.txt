@@ -1,0 +1,12 @@
+git-workflow
+update -> change -> review -> commit
+
+git pull
+git fetch
+git diff -> qué cambios aún no se han comiteado
+
+
+forking-workflow
+1. me forkeo un proyecto (clono el repo donde no tengo permiso en mi repositorio)
+2. hago los cambios/commits pertinentes 
+3. contribute (pull request - PR)
