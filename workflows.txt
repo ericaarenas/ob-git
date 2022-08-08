@@ -4,7 +4,7 @@ update -> change -> review -> commit
 git pull -> actualizar el repo local de los cambios que haya en el git.
 git fetch
 git diff -> qué cambios aún no se han comiteado
-
+git branch -d nombrerama -> borrar rama
 
 forking-workflow
 1. me forkeo un proyecto (clono el repo donde no tengo permiso en mi repositorio)
@@ -15,3 +15,4 @@ forking-workflow
 HOOKS
 son scripts propios de git que tienen la extensión .sample
 git/hooks
+

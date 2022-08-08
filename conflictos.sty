@@ -1,0 +1,17 @@
+CONFLICTOS
+Son cambios que se roducen en git que no nos permiten hacer un merge o un rebase como nosotros querríamos
+
+Cuando se trabaja en una rama secundaria (branch) y se quiere mergear, en ocasiones puede ocurrir que he hecho cambios en algún archivo y existente en la rama principal con cambios nuevos también.
+desde ramaprincipal: git merge rama2 
+me genera conflicto al tener el mismo archivo con contenidos diferentes y nuevos en ambos casos (la misma línea).
+
+¿Como solventarlo?
+git status -> nos dicen qué archivos tienen conflictos
+tendré que editar el fichero
+nos encontramos dos cosas:
+1. "========="
+2. me quedo  con el commit actual, en la rama en la que yo estoy trabajando (HEAD) o me quedo con los cambios de la rama2
+Solo tengo que dejar el cambio que me interesa
+- git commit -am "solvento el conflicto"
+- git push
+
