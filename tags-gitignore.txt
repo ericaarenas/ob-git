@@ -1,0 +1,16 @@
+
+Github -> pull request
+GitLab -> merge request
+origin suele ser el término utilizado para referirnos al repo remoto
+
+ETIQUETAS
+las tags hacen referencia a un commit concreto dentro del historial de confirmación. 
+-git tag -a v1.1 -m "version 1.1" referenciaDelCommit (b48793)
+para despues publicarla en el repo remoto
+-git push origin v1.1
+
+MIRRORING 
+a la hora de trabajar con un repo publico (por ejemplo en github) y quieres clonarlo en otro repo empresarial (gitlab), el mirroring lo que hace es chequear cada cierto tiempo los cambios en github y de haber nuevos, copiarlos a Gitlab.
+
+GITIGNORE
+lo primero que hay que hacer antes de nada es crear el .gitignore y hacer push, antes de comenzar a trabajar

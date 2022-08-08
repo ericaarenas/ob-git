@@ -1,7 +1,7 @@
 git-workflow
 update -> change -> review -> commit
 
-git pull
+git pull -> actualizar el repo local de los cambios que haya en el git.
 git fetch
 git diff -> qué cambios aún no se han comiteado
 
@@ -10,3 +10,8 @@ forking-workflow
 1. me forkeo un proyecto (clono el repo donde no tengo permiso en mi repositorio)
 2. hago los cambios/commits pertinentes 
 3. contribute (pull request - PR)
+4. que te lo acepten 
+
+HOOKS
+son scripts propios de git que tienen la extensión .sample
+git/hooks

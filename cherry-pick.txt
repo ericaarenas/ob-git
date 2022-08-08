@@ -2,7 +2,7 @@ git reset -hard HEAD <- revertir historial
 git log --oneline --graph
 
 Para añadir un archivo al repositorio
-git add fichero
+git add fichero (si quieres forzar se le añade -f)
 
 Commitear 
 git commit fichero -m "mensaje"
