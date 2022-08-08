@@ -14,3 +14,7 @@ a la hora de trabajar con un repo publico (por ejemplo en github) y quieres clon
 
 GITIGNORE
 lo primero que hay que hacer antes de nada es crear el .gitignore y hacer push, antes de comenzar a trabajar
+
+CONFIG
+git config --local user.name "Erica Arenas"
+git config --local user.email "mi email"

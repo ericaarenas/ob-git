@@ -1,0 +1,55 @@
+LOG
+ - git log 
+si yo quiero ver todos los cambios de todas las ramas 
+ - git log --branches='*'
+version corta de log
+ - git log --oneline
+se puede personalizar
+ - git log --graph --pretty-format...
+ - git log --oneline | cat | head -n 5 <- para sacar los últimos 5 commits
+
+CHECKOUT
+se utiliza para cambiar de ramas PERO tb
+deshacer cambios que ya he hecho
+ - git checkout hashDelCommitAlQueQuieroVolver
+me avisará de que estoy en detached HEAD -> mi commit principal está en otro sitio. Cualquier cosa que yo haga en detached HEAD será eliminada por git en cuanto ejecute su recolector de basura.
+Para guardaar esos posibles cambios, lo suyo sería crear una rama en el commit al que he "viajado".
+git checkout -b ramaPreviaAlFallo
+
+REVERT
+para deshacer commits insertando commits
+deshace cambios
+ - git revert nombreCommit
+revertir un commit NO elimina info
+solo deshace cambios, no elimina nada
+git revert hash3 hash2 hash1 y así
+
+COMMIT
+git commit --amend puedo cambiar el último mensaje (los datos del último commit)
+
+CLEAN
+ - git clean 
+ limpia todo aquello que no esta staged o en mi repositorio previamente.
+ - git clean -n -> para probar qué pasaría
+ - git clean -f -> para forzar el clean
+ - git clean -i -> modo interactivo que a través de una interfaz de texto nos va a permitir elegir qué borramos y qué no borramos
+
+ RESET
+ a diferencia de los anteriores, el reset también vuelve a un punto anterior PERO elimina cosas.
+ ARBOLES:
+ 1. HEAD -> cabecera de mis commits
+ 2. STAGING AREA -> ni commiteados ni sin commitear (para listar los archivos git ls-files --stage)
+ 3. Repositorio
+ RESET tiene tres opcioens de trabajo, dependiendo del arbol al que esté apuntando:
+ --soft -> HEAD (no toca ni el working space ni el staging area. Menos utilizado)
+ --mixed -> staging area (pero no toca nada más)
+ --hard -> repo *** (la que más se usa)
+
+si yo hago un git reset --hard, vuelvo al estado del repo que había justo después de mi últimmo pull
+si yo hago:
+git reset --hard hashCommit -> NO RECOMENDABLE en repos que no son nuestros
+
+DEJAR DE TRAZAR FICHEROS
+git rm archivo
+git commit -am "elimino archivo"
+git push
