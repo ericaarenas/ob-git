@@ -23,3 +23,7 @@ lo megeará a main
 pedirá una etiqueta para ese merge
 lo megeará a develop
 y elimmina la rama hotfix_1
+
+DESVENTAJAS
+utiliza merges bastante grandes
+Entre una version y otra hay muchos cambios, por lo que es muy factible que tengamos problemas de conflictos.
