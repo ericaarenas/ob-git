@@ -12,3 +12,7 @@ jobs: lo que se va a hacer (uno o varios)
 Por ejemplo, "greetings" es un workflow creado ya en Github que "saluda" al usuario que lanza una incidencia una primera vez.
 
 Se puede buscar más info en "github actions events"
+
+cuando tu editas un archivo .yml directamente en github, la interfaz es diferente a cuando editas cualquier otro archivo de tu proyecto (con "wizard" y marketplace que te ayuda a elaborar una configuración para un github action)
+
+**Revisa el workflow para desplegar en heroku!!
