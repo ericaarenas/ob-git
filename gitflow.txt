@@ -1,0 +1,25 @@
+GIT FLOW
+Es flujo de trabajo basado en ramas que permite el desarrollo en paralelo de varias features.
+
+-git flow init
+te crea la estructura (main-develop y demás)
+- git flow feature_login -> para crear una rama nueva de develop
+comiteo, trabajo, tal...
+- git flow feature finish feature_login
+1. hace un merge AUTOMATICO a develop de esa rama cuando le lanzo ese comando después de hacer un commit y push de todo mi trabajo 
+2. se elimina la rama  
+3. te coloca en develop
+despues:
+- git flow release start 0.1
+trabajamos en esa rama sabiendo que estamos preparando el pase a preparando
+- git flow release finish '0.1' 
+me hace un merge en MAIN, no en develop
+HOTFIX
+- git flow hotfix start hotfix_1
+resolvemos el error
+comiteamos 
+- git flow hotfix finish hotfix_1
+lo megeará a main
+pedirá una etiqueta para ese merge
+lo megeará a develop
+y elimmina la rama hotfix_1
