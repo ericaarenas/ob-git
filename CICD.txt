@@ -1,0 +1,20 @@
+INTEGRACION CONTINUA (CI)
+
+El proceso por el cual estamos integrando en un proyecto todos nuestros cambios continuamente.
+Nuestro código ha de estar versionado (github, gitlab...) 
+Jenkins~
+-> xTiempo, verificamos los últimos cambios
+    -> el código debe estar en un repo
+        -> versionado, con SVN, Git, etc
+
+1. Nos conectábamos a un servidor de pruebas
+2. Obteníamos el código fuente (git pull)
+3. Lo compilábamos (min, aradle, campe, etc)
+4. Ejecutábamos las pruebas (si había)
+5. Ejecutábamos el software
+
+CONTINUOUS DELIVERY (despliegue o entrega continuo)
+los cambios deben ser pequeñitos porque se desplegan continuamente (a PRO)
+
+6. Copiar mis ficheros resultantes en un servidor de PRO
+7. Re-ejecutar el programa en cuestión
