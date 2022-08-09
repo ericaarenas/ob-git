@@ -1,0 +1,14 @@
+GITHUB ACTIONS
+CICD hecho con Git 
+para configuración tenemos archivos .yml
+para acceder, en github, en cada repo, está la opción de Actions 
+
+name:
+on: qué ramas se ejecutará o qué evento (por ejemplo, incidencias/issues)
+(events: los eventos que se lanzan)
+jobs: lo que se va a hacer (uno o varios)
+  steps: pasos a seguir
+
+Por ejemplo, "greetings" es un workflow creado ya en Github que "saluda" al usuario que lanza una incidencia una primera vez.
+
+Se puede buscar más info en "github actions events"
