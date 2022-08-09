@@ -5,6 +5,7 @@ para acceder, en github, en cada repo, está la opción de Actions
 
 name:
 on: qué ramas se ejecutará o qué evento (por ejemplo, incidencias/issues)
+workflow_dispatch -> para ejecutarlo manualmente!
 (events: los eventos que se lanzan)
 jobs: lo que se va a hacer (uno o varios)
   steps: pasos a seguir
@@ -16,3 +17,5 @@ Se puede buscar más info en "github actions events"
 cuando tu editas un archivo .yml directamente en github, la interfaz es diferente a cuando editas cualquier otro archivo de tu proyecto (con "wizard" y marketplace que te ayuda a elaborar una configuración para un github action)
 
 **Revisa el workflow para desplegar en heroku!!
+
+los runners son programitas que están instalados y van mirando por cambios. En cuanto los hay, uno de los runners (e l que esté libre en ese momento) va y ejecuta el pipeline.
